@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detona Ralph Game</title>
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======== MENU INICIAL ======== -->
+  <div id="menu-screen" class="menu-screen">
+    <h1 class="title">🎮 Detona Ralph</h1>
+    <p class="subtitle">Acerte o Ralph o máximo que puder!</p>
+    <p class="record">🏆 Recorde atual: <span id="menu-high-score">0</span></p>
+    <button id="start-button" class="btn-start">Iniciar Jogo</button>
+  </div>
+
+  <!-- ======== ÁREA DO JOGO ======== -->
+  <div id="game-screen" class="game-screen hidden">
+    <h1>Detona Ralph</h1>
+
+    <div class="status-bar">
+      <p>⏰ Tempo: <span id="time-left">60</span></p>
+      <p>🏅 Pontuação: <span id="score">0</span></p>
+      <p>❤️ Vidas: <span id="lives">5</span></p>
+      <p>🏆 Recorde: <span id="high-score">0</span></p>
+    </div>
+
+    <div class="grid">
+      <div class="square" id="1"></div>
+      <div class="square" id="2"></div>
+      <div class="square" id="3"></div>
+      <div class="square" id="4"></div>
+      <div class="square" id="5"></div>
+      <div class="square" id="6"></div>
+      <div class="square" id="7"></div>
+      <div class="square" id="8"></div>
+      <div class="square" id="9"></div>
+    </div>
+
+    <footer>Feito com 💙 por Francine Souza</footer>
+  </div>
+
+  <script src="./src/scripts/script.js"></script>
+</body>
+</html>

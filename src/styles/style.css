@@ -1,0 +1,191 @@
+/* ======== ESTILO GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", cursive; /* Fonte estilo arcade */
+}
+
+body {
+    background: linear-gradient(135deg, #001f3f, #004aad);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ======== CABEÇALHO DO JOGO ======== */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.status-bar {
+    display: flex;
+    gap: 25px;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px #000;
+    margin-bottom: 50px;
+}
+
+.status-bar span {
+    color: #ffd700;
+}
+
+/* ======== GRADE DE JOGO ======== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Quadrados padrão */
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: #01204e;
+    border: 3px solid #005eff;
+    border-radius: 15px;
+    box-shadow: 0 4px 0 #001c3a;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Feedback visual ao clicar */
+.square:active {
+    transform: scale(0.95);
+    background-color: #013d8a;
+}
+
+/* ======== RALPH APARECE ======== */
+.enemy {
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: pop 0.3s ease-in-out;
+}
+
+/* Animação de entrada do Ralph */
+@keyframes pop {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #a0c4ff;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(3, 90px);
+        gap: 10px;
+    }
+
+    .square {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .status-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* ======== MENU INICIAL ======== */
+.menu-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.menu-screen .title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px #000;
+}
+
+.menu-screen .subtitle {
+  font-size: 0.9rem;
+  color: #a0c4ff;
+  margin-bottom: 60px;
+}
+
+.menu-screen .record {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+  color: #ffd700;
+  text-shadow: 1px 1px #000;
+}
+
+.btn-start {
+  background-color: #ffd700;
+  color: #000;
+  font-size: 0.8rem;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #b38e00;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-start:hover {
+  transform: scale(1.05);
+  background-color: #ffea70;
+}
+
+/* ======== ANIMAÇÕES ======== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  display: none;
+}
+
+.fade {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* ======== AJUSTE RESPONSIVO DO MENU ======== */
+@media (max-width: 500px) {
+  .menu-screen .title {
+    font-size: 1.2rem;
+  }
+
+  .btn-start {
+    font-size: 0.7rem;
+    padding: 12px 20px;
+  }
+}
