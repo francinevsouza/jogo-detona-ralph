@@ -1,6 +1,11 @@
 <div align="center">
   <h1 align="center">
     Jogo Detona Ralph
+    <br />
+    <br />
+    <a href="https://github.com/francinevsouza/jogo-detona-ralph/blob/main/src/images/detona-ralph-poster.jpg">
+      <img src="https://github.com/francinevsouza/jogo-detona-ralph/blob/main/src/images/detona-ralph-poster.jpg"> 
+    </a>    
   </h1>
 </div>
 
@@ -17,11 +22,13 @@
 
 :small_blue_diamond: [Tecnologias utilizadas](#tecnologias-utilizadas)
 
+:small_blue_diamond: [Como jogar](#como-jogar)
+
 :small_blue_diamond: [Acesso ao projeto](#acesso-ao-projeto)
 
 :small_blue_diamond: [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação)
+:small_blue_diamond: [Deploy da aplicação](#deploy-da-aplicação)
 
 :small_blue_diamond: [Desenvolvedora](#desenvolvedora)
 
@@ -51,7 +58,7 @@ O objetivo foi criar um jogo interativo onde o jogador deve <b>clicar rapidament
 
 ## Demonstração da aplicação
 
-
+https://github.com/user-attachments/assets/d39f0b4d-ecfc-43cf-b539-00e51832896d
 
 
 ## Tecnologias utilizadas
@@ -61,6 +68,15 @@ O objetivo foi criar um jogo interativo onde o jogador deve <b>clicar rapidament
   <a href=""><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"></a>
   <a href=""><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"></a>
 </p>
+
+
+## Como jogar
+
+1. Clique no botão **Iniciar Jogo**.
+2. O Ralph aparecerá aleatoriamente em um dos quadrados.
+3. Clique nele o mais rápido possível para **ganhar pontos**.
+4. O jogo dura **60 segundos** — tente fazer o **maior placar possível!**
+5. Quando o tempo chega a zero, o jogo mostra a frase: “Game Over! O seu resultado foi: X pontos.”
 
   
 ## Acesso ao projeto
@@ -74,16 +90,17 @@ git clone git@github.com:francinevsouza/jogo-detona-ralph.git
 
 ## Abrir e rodar o projeto
 
-Após clonar o projeto, você pode abri-lo no Visual Studio Code. Para isso, clique em:
-
+1. Após clonar o projeto, você pode abri-lo no Visual Studio Code. Para isso, clique em:
 - **File - Open Folder**;
 - Procure o local onde o projeto está e o selecione;
 - Por fim clique em **Selecionar pasta**.
 
+2. Ou abra o arquivo `index.html` em seu navegador web.
 
-## Deploy da Aplicação 
 
-🔗 Acesse online: 
+## Deploy da aplicação 
+
+🔗 Acesse online: [Jogo Detona Ralph](https://jogo-detona-ralph-ten.vercel.app/)
 
 
 ## Desenvolvedora
